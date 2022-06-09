@@ -72,7 +72,7 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'breakfast-club',
+        'NAME': 'dbname',
         'HOST': 'localhost',
         'PORT': 5432
     }

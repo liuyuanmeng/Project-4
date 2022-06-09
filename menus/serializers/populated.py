@@ -1,6 +1,6 @@
 from .common import MenuSerializer
-from foodtype.serializers.common import FoodtypeSerializer
+from foodtypes.serializers.common import FoodtypeSerializer
 
 
 class PopulatedMenuSerializer(MenuSerializer):
-    foodtype = FoodtypeSerializer(many=True)
+    foodtypes = FoodtypeSerializer(many=True)

@@ -3,6 +3,8 @@ from decouple import config
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
+MEDIA_ROOT = ''
+MEDIA_URL = ''
 
 
 # Quick-start development settings - unsuitable for production
@@ -20,6 +22,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'django.contrib.sites',
+    'allauth',
+    'allauth.account',
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
+    
     
     'django.contrib.admin',
     'django.contrib.auth',
@@ -29,17 +37,22 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework',
     'jwt_auth',
-    'menus',
-    'foodtypes'
+    'dishes',
+    'foodtypes',
+    'bookings',
+    'locations'
+   
     
    
 ]
+SITE_ID = 1
+# 676978684985-stdsbjqlqhtn185giaojapbvjoabc84n.apps.googleusercontent.com
+# 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
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
-    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
@@ -72,11 +85,23 @@ WSGI_APPLICATION = 'project.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dbname',
+        'NAME': 'my-restaurant',
         'HOST': 'localhost',
         'PORT': 5432
     }
 }
+
+AUTHENTICATION_BACKENDS = (
+    'django.contrib.auth.backends.ModelBackend',
+
+    
+    'allauth.account.auth_backends.AuthenticationBackend',
+    'social_core.backends.google.GoogleOAuth2',
+)
+    
+    
+   
+
 
 
 # Password validation
@@ -119,6 +144,7 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
 AUTH_USER_MODEL = 'jwt_auth.User' 
 REST_FRAMEWORK = {
     'DEFAULT_RENDERER_CLASSES': [
@@ -128,4 +154,24 @@ REST_FRAMEWORK = {
     'DEFAULT_AUTHENTICATION_CLASSES': [
         'jwt_auth.authentication.JWTAuthentication'
     ]
+}
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = "smtp.gmail.com"
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_HOST_USER = config("EADDRESS")
+EMAIL_HOST_PASSWORD = config("EPASSWORD")
+DEFAULT_FROM_EMAIL = 'default from email'
+
+SOCIALACCOUNT_PROVIDERS = {
+    'google': {
+        'SCOPE': [
+            'profile',
+            'email',
+        ],
+        'AUTH_PARAMS': {
+            'access_type': 'online',
+        }
+    }
 }

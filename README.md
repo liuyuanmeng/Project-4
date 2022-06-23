@@ -29,6 +29,9 @@ Planning:
 Approach Taken
 Planning (day1)
 I decided very quickly on the idea of building a restaurant app for my final project. Is the combination of food love and coding love. I used Excalidraw to plan my draft for the homepage and backend relationships. 
+![Screenshot 2022-06-23 at 16 42 35](https://user-images.githubusercontent.com/100864042/175339847-aa9f8930-205c-4bc6-a116-bb367a1cd7f3.png)
+
+![Screenshot 2022-06-23 at 16 42 49](https://user-images.githubusercontent.com/100864042/175339868-5bbc547b-22d3-44c5-ba53-65f388534cd9.png)
 
 
 

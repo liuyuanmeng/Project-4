@@ -35,33 +35,34 @@ I decided very quickly on the idea of building a restaurant app for my final pro
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 Demonstration of the App Flow 
+
+![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/100864042/175339241-560ddf7a-d10f-4b86-9f55-00958b229145.gif)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

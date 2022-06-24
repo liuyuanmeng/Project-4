@@ -45,9 +45,9 @@ https://user-images.githubusercontent.com/100864042/175494749-4e7f5927-c321-4164
 
 Home Page 
 In home page there three links will take user to a different  pages.
-![Screenshot 2022-06-23 at 15 52 15](https://user-images.githubusercontent.com/100864042/175341505-c2d1f7bd-e182-4df4-a10e-cc72f756af19.png | width=100)
+![Screenshot 2022-06-23 at 15 52 15](https://user-images.githubusercontent.com/100864042/175341505-c2d1f7bd-e182-4df4-a10e-cc72f756af19.png)
 
-![Screenshot 2022-06-23 at 16 51 10](https://user-images.githubusercontent.com/100864042/175341595-0aa3e07c-6d08-4dbd-a115-559095147451.png | width=100)
+![Screenshot 2022-06-23 at 16 51 10](https://user-images.githubusercontent.com/100864042/175341595-0aa3e07c-6d08-4dbd-a115-559095147451.png)
 
 
 Menu Page 

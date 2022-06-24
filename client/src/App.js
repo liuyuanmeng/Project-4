@@ -21,14 +21,14 @@ const App = () => {
       <PageNavbar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/dishes" element={<Dishes/>} />
-        <Route path="/bookings" element={<Booking/>} />
+        <Route path="/register/" element={<Register />} />
+        <Route path="/login/" element={<Login />} />
+        <Route path="/dishes/" element={<Dishes/>} />
+        <Route path="/bookings/" element={<Booking/>} />
         <Route path="/bookings/:id/" element={<BookingEdit/>} />
-        <Route path="/locations" element={<Location/>} />
-        <Route path="/find-us" element={<Findus/>} />
-        <Route path="/story" element={<Story/>} />
+        <Route path="/locations/" element={<Location/>} />
+        <Route path="/find-us/" element={<Findus/>} />
+        <Route path="/story/" element={<Story/>} />
         
 
 

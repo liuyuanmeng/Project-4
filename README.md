@@ -62,7 +62,8 @@ In menu page display  name, price, image and types of the dishs.
 <img src="https://user-images.githubusercontent.com/100864042/175496753-4db1e47c-3b3a-4925-a53c-e138a00c3271.png" width="600">
  
 
-## FindUs Page - Links provided to user if user want to login and register to make a booking
+## FindUs Page 
+Links provided to user if user want to login and register to make a booking.
 <img src="https://user-images.githubusercontent.com/100864042/175342152-448d09b0-f357-40f5-af9f-830e16d11367.png" width="600">
 
 
@@ -102,7 +103,7 @@ Used modal from react-bootstrap-modal to show the booking from.
 
 
 ## Individual Booking 
-User can change or delete Booking
+User can change or delete Booking.
 <img src="https://user-images.githubusercontent.com/100864042/175342455-5caa3e35-5c40-4a16-a032-6d88137e42af.png" width="600">
 
 ## Email confirmation will be send to customer after booking is made or changed.

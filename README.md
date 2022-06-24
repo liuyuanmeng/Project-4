@@ -29,18 +29,23 @@ Planning:
 Approach Taken
 Planning (day1)
 I decided very quickly on the idea of building a restaurant app for my final project. Is the combination of food love and coding love. I used Excalidraw to plan my draft for the homepage and backend relationships. 
-![Screenshot 2022-06-23 at 16 42 35](https://user-images.githubusercontent.com/100864042/175339847-aa9f8930-205c-4bc6-a116-bb367a1cd7f3.png)
+![Screenshot 2022-06-23 at 16 42 35](https://user-images.githubusercontent.com/100864042/175339847-aa9f8930-205c-4bc6-a116-bb367a1cd7f3.png  =250x250)
 
 ![Screenshot 2022-06-23 at 16 42 49](https://user-images.githubusercontent.com/100864042/175339868-5bbc547b-22d3-44c5-ba53-65f388534cd9.png)
-
-
-
-
 
 
 Demonstration of the App Flow 
 
 https://user-images.githubusercontent.com/100864042/175494749-4e7f5927-c321-4164-a7ca-8c56b4ba4ff2.mov
+
+Functionality 
+
+In My Kitchen restaurant application. User can:
+.Register & Login to make booking and view booking history.
+.View all the dishs on the menu
+.Modify booking
+.Delete booking
+
 
 
 Home Page 
@@ -53,7 +58,8 @@ In home page there three links will take user to a different  pages.
 Menu Page 
 In menu page display  name, price, image and types of the dishs.
 ![Screenshot 2022-06-23 at 16 08 55](https://user-images.githubusercontent.com/100864042/175341959-245b9e31-1374-4f4f-bb81-d4ac216e0e1f.png)
-
+![Screenshot 2022-06-24 at 09 31 38](https://user-images.githubusercontent.com/100864042/175496753-4db1e47c-3b3a-4925-a53c-e138a00c3271.png)
+ 
 
 FindUs Page - Links provided to user if user want to login and register to make a booking
 ![Screenshot 2022-06-23 at 16 09 05](https://user-images.githubusercontent.com/100864042/175342152-448d09b0-f357-40f5-af9f-830e16d11367.png)

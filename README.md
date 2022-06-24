@@ -112,5 +112,10 @@ User can change or delete Booking.
 ## Email confirmation will be send to customer after booking is made or changed.
 
 <img src="https://user-images.githubusercontent.com/100864042/175342726-185449c5-7a75-4a84-9f75-1bf24a89bfb4.png" width="600">
+**Featured Code - Postmethod - post booking and send out email **
+<img src="https://user-images.githubusercontent.com/100864042/175503671-a8d08550-c240-46fc-971b-99a0ba7e4d53.png" width="600">
+**Featured Code - Putmethod - modify booking and send out email **
+<img src="https://user-images.githubusercontent.com/100864042/175503740-b37da338-5455-4a81-95d9-c9789dc8576d.png" width="600">
+
 
 

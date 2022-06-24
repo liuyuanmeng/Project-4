@@ -40,6 +40,10 @@ I decided very quickly on the idea of building a restaurant app for my final pro
 
 Demonstration of the App Flow 
 
+https://user-images.githubusercontent.com/100864042/175494749-4e7f5927-c321-4164-a7ca-8c56b4ba4ff2.mov
+
+
+
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/100864042/175339241-560ddf7a-d10f-4b86-9f55-00958b229145.gif)
 
 

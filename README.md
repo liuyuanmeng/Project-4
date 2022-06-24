@@ -34,6 +34,12 @@ I decided very quickly on the idea of building a restaurant app for my final pro
 
 <img src="https://user-images.githubusercontent.com/100864042/175339868-5bbc547b-22d3-44c5-ba53-65f388534cd9.png" width="600">)
 
+I used QuickDBD to design all the relations diagram for the database architecture.
+
+<img src="https://user-images.githubusercontent.com/100864042/175521468-27bcd2c6-15d2-4137-9dba-080543d28269.png" width="600">)
+
+
+
 
 ## Demonstration of the App Flow 
 
@@ -47,7 +53,7 @@ In My Kitchen restaurant application. User can:
 * Modify booking
 * Delete booking
 
-
+## Final Product - Screenshot Walkthrough
 
 ## Home Page 
 In home page there three links will take user to a different  pages.

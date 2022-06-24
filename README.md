@@ -104,7 +104,10 @@ Used modal from react-bootstrap-modal to show the booking from.
 
 ## Individual Booking 
 User can change or delete Booking.
+
 <img src="https://user-images.githubusercontent.com/100864042/175342455-5caa3e35-5c40-4a16-a032-6d88137e42af.png" width="600">
+
+
 
 ## Email confirmation will be send to customer after booking is made or changed.
 

@@ -43,11 +43,6 @@ Demonstration of the App Flow
 https://user-images.githubusercontent.com/100864042/175494749-4e7f5927-c321-4164-a7ca-8c56b4ba4ff2.mov
 
 
-
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/100864042/175339241-560ddf7a-d10f-4b86-9f55-00958b229145.gif)
-
-
-
 Home Page 
 In home page there three links will take user to a different  pages.
 ![Screenshot 2022-06-23 at 15 52 15](https://user-images.githubusercontent.com/100864042/175341505-c2d1f7bd-e182-4df4-a10e-cc72f756af19.png)

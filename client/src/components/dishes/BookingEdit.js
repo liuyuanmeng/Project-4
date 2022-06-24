@@ -37,7 +37,9 @@ const BookingEdit = () => {
         })
         setBooking(data)
         setFormData(data)
-        setFormData({ ...data, time: formData.time.slice(0, 6) })
+        // phone number is stored as 12:00:00 in the database but here we need to display it as 12:00
+        setFormData({ ...data, time: data.time.slice(0, 5) })
+        
 
 
       } catch (error) {
@@ -47,7 +49,9 @@ const BookingEdit = () => {
 
     }
     getSingleBooking()
+  
   }, [id])
+
 
   const handleChange = (e) => {
     setFormData({ ...formData, [e.target.name]: e.target.value })
@@ -74,7 +78,9 @@ const BookingEdit = () => {
         },
 
       })
+     
       console.log('data', data)
+      navigate('/bookings')
 
     } catch (error) {
       console.log(error)
@@ -235,6 +241,7 @@ const BookingEdit = () => {
         },
 
       })
+     
 
     } catch (error) {
       console.log(error)

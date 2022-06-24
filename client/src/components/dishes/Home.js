@@ -29,7 +29,7 @@ const Home = () => {
 
   return (
 
-    <Container fluid >
+    <Container fluid  >
       <Row className = 'slider'>
         <Slider {...settingsSingle} className='big-slider'>
           <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-restaurants-1653384324.png?resize=768:*" />
@@ -37,10 +37,10 @@ const Home = () => {
           <img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/restaurant-story-1580379434.png?resize=768:*" />
         </Slider>
       </Row>
-      <Row>
+      <Row className='moveup'>
         <Col className='mb-4' >
           <Card>
-            <Link as={Link} to="/bookings">
+            <Link as={Link} to="/login">
 
               <img src={booktable} />
             </Link>

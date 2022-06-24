@@ -1,0 +1,23 @@
+[
+  {
+    "model": "foodtypes.foodtype",
+    "pk": 1,
+    "fields": {
+      "name": "Vegan"
+    }
+  },
+  {
+    "model": "foodtypes.foodtype",
+    "pk": 2,
+    "fields": {
+      "name": "Non-Vegetarian"
+    }
+  },
+  {
+    "model": "foodtypes.foodtype",
+    "pk": 3,
+    "fields": {
+      "name": "Vegetarian"
+    }
+  }
+]

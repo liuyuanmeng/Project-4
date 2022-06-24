@@ -70,8 +70,8 @@ const Location = ({ name, ...props }) => {
           <h3 className='mt-2'>Saturday  12:00-23:00</h3>
           <h3 className='mt-2'>Sunday  12:00-23:00</h3>
 
-
-          <Button variant="secondary mt-5" onClick={handleShow}> Click Here To Find Us On Google Maps</Button>
+          <div className='moveup'> <Button variant="secondary mt-1" onClick={handleShow}> Click Here To Find Us On Google Maps</Button> </div>
+          
           <Offcanvas show={show} onHide={handleClose} placement='end'>
             <Offcanvas.Header closeButton>
               <Offcanvas.Title>You can find our maps in here</Offcanvas.Title>

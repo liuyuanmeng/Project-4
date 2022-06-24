@@ -1,0 +1,122 @@
+[
+  {
+    "model": "dishes.dish",
+    "pk": 2,
+    "fields": {
+      "name": "See City",
+      "price": 15,
+      "image": "dishes/files/covers/your_shellfish.jpeg",
+      "foodtype": 2
+    }
+  },
+  {
+    "model": "dishes.dish",
+    "pk": 4,
+    "fields": {
+      "name": "Mushroom Club",
+      "price": 13,
+      "image": "dishes/files/covers/party_mushroom.jpeg",
+      "foodtype": 3
+    }
+  },
+  {
+    "model": "dishes.dish",
+    "pk": 5,
+    "fields": {
+      "name": "Next Door Fish",
+      "price": 14,
+      "image": "dishes/files/covers/seelover.jpeg",
+      "foodtype": 2
+    }
+  },
+  {
+    "model": "dishes.dish",
+    "pk": 6,
+    "fields": {
+      "name": "English Breakfast",
+      "price": 13,
+      "image": "dishes/files/covers/Family_breakfast.jpeg",
+      "foodtype": 2
+    }
+  },
+  {
+    "model": "dishes.dish",
+    "pk": 7,
+    "fields": {
+      "name": "My Burger",
+      "price": 14,
+      "image": "dishes/files/covers/macroots.jpeg",
+      "foodtype": 2
+    }
+  },
+  {
+    "model": "dishes.dish",
+    "pk": 8,
+    "fields": {
+      "name": "Pancake  house",
+      "price": 12,
+      "image": "dishes/files/covers/Pancake_Chanellge.jpeg",
+      "foodtype": 3
+    }
+  },
+  {
+    "model": "dishes.dish",
+    "pk": 9,
+    "fields": {
+      "name": "Avocado Toast",
+      "price": 13,
+      "image": "dishes/files/covers/images_3.jpeg",
+      "foodtype": 3
+    }
+  },
+  {
+    "model": "dishes.dish",
+    "pk": 10,
+    "fields": {
+      "name": "Lobster Party",
+      "price": 20,
+      "image": "dishes/files/covers/party_time.jpeg",
+      "foodtype": 2
+    }
+  },
+  {
+    "model": "dishes.dish",
+    "pk": 11,
+    "fields": {
+      "name": "Farm Chicken",
+      "price": 14,
+      "image": "dishes/files/covers/chicken01.jpeg",
+      "foodtype": 2
+    }
+  },
+  {
+    "model": "dishes.dish",
+    "pk": 12,
+    "fields": {
+      "name": "Salmon Benedict",
+      "price": 15,
+      "image": "dishes/files/covers/salmon.jpeg",
+      "foodtype": 2
+    }
+  },
+  {
+    "model": "dishes.dish",
+    "pk": 13,
+    "fields": {
+      "name": "Green Garden",
+      "price": 11,
+      "image": "dishes/files/covers/vegan.png",
+      "foodtype": 1
+    }
+  },
+  {
+    "model": "dishes.dish",
+    "pk": 14,
+    "fields": {
+      "name": "Little Tokyo",
+      "price": 14,
+      "image": "dishes/files/covers/little_toyk.jpeg",
+      "foodtype": 2
+    }
+  }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "model": "locations.location",
+    "pk": 1,
+    "fields": {
+      "name": "Angel"
+    }
+  },
+  {
+    "model": "locations.location",
+    "pk": 2,
+    "fields": {
+      "name": "Hoxton"
+    }
+  }
+]

@@ -19,8 +19,8 @@ class BookingView(APIView):
 
     # GET - Returns all bookings
     def get(self, request):
-        # in this controller, we just want to get all the items inside the albums table and return it as a response
         bookings = Booking.objects.all() # get all fields using all() method
+        # we use the filter function to return bookings made by the owner only
         bookings_filter = list(filter((lambda booking: booking.owner == request.user), bookings))
         # .all() returns a QuerySet, we need to use the serializer to convert this into a python datatype
         serialized_bookings = PopulatedBookingSerializer(bookings_filter, many=True) # if we expect multiple items in the QuerySet, use many=True
@@ -29,11 +29,13 @@ class BookingView(APIView):
     
     def post(self, request):
         request.data['owner'] = request.user.id
-        location_name = request.data['location']
+        # we use this variable as we are going to reassign request.data['location']
+        location_name = request.data['location'] 
+        # we reformat the date using the datetime module
         date_formatted = datetime.strptime(request.data['Date'], '%Y-%m-%d').strftime('%A %d. %B %Y')
+        # location name was sent but we need location id to store booking in the database
+        # we do that by finding the location that has the location name we were sent and then we take its ID
         request.data['location'] = Location.objects.get(name=request.data['location']).id
-        # request.data['Date'] = datetime.strptime(request.data['Date'], '%Y-%m-%d').date()
-        # request.data['time'] = datetime.strptime(request.data['time'], '%H:%M').time()
         print('request ->', request.data)
         booking_to_add = BookingSerializer(data=request.data)
         try:
@@ -41,9 +43,9 @@ class BookingView(APIView):
             booking_to_add.save()
             to_email = request.data['email']
             mail_subject = 'My Kitchen - Booking Confirmation'
+            # we use the format method for templating
             mail_message = 'We will see you on {date} at {time} at our {location} restaurant! \n\nKind regards, \nDaisy'.format(date=date_formatted, time=request.data['time'], location=location_name)
             send_mail(subject=mail_subject, message=mail_message, from_email=settings.EMAIL_HOST_USER, recipient_list=[to_email], auth_user=settings.EMAIL_HOST_USER, auth_password=settings.EMAIL_HOST_PASSWORD)
-        #  return Response(booking_to_add.data, status.HTTP_201_CREATED)
             return Response({'message': f"Thank you for booking, {request.data['name']}"}, status.HTTP_201_CREATED)
         except ValidationError:
             return Response(booking_to_add.errors, status.HTTP_422_UNPROCESSABLE_ENTITY)
@@ -64,6 +66,7 @@ class BookingDetailView(APIView):
     def get(self, request, pk):
         booking = self.get_booking(pk)
         print('booking --->', booking)
+        # we use PopulatedBookingSerializer to get owner and location information
         serialized_booking = PopulatedBookingSerializer(booking)
         return Response(serialized_booking.data, status.HTTP_200_OK)
 
@@ -75,7 +78,9 @@ class BookingDetailView(APIView):
         return Response(status=status.HTTP_204_NO_CONTENT)
 
     def put(self, request, pk):
+        location_name = Location.objects.get(pk=request.data['location']).name
         booking_to_update = self.get_booking(pk=pk)
+        date_formatted = datetime.strptime(request.data['Date'], '%Y-%m-%d').strftime('%A %d. %B %Y')
         if booking_to_update.owner !=request.user:
             raise PermissionDenied()
         deserialized_booking = BookingSerializer(booking_to_update, request.data)
@@ -83,6 +88,11 @@ class BookingDetailView(APIView):
             deserialized_booking.is_valid()
             print(deserialized_booking)
             deserialized_booking.save()
+            to_email = request.data['email']
+            mail_subject = 'My Kitchen - Booking Amendment Confirmation'
+            # we use the format method for templating
+            mail_message = 'We will see you on {date} at {time} at our {location} restaurant! \n\nKind regards, \nDaisy'.format(date=date_formatted, time=request.data['time'], location=location_name)
+            send_mail(subject=mail_subject, message=mail_message, from_email=settings.EMAIL_HOST_USER, recipient_list=[to_email], auth_user=settings.EMAIL_HOST_USER, auth_password=settings.EMAIL_HOST_PASSWORD)
             return Response(deserialized_booking.data, status.HTTP_202_ACCEPTED)
         except Exception as e:
             print(e)

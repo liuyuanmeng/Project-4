@@ -49,7 +49,7 @@ const Booking = () => {
           Authorization: `Bearer ${getTokenFromLocalStorage()}`,
         },
       })
-      navigate('/dishes')
+      navigate('/bookings')
     } catch (err) {
       console.log(err)
       console.log(err.response.data.errors)
@@ -99,7 +99,7 @@ const Booking = () => {
 
       <Modal show={show} onHide={handleClose} className='formContainer'>
         <Modal.Header closeButton>
-          <Modal.Title >Booking Form</Modal.Title>
+          <Modal.Title >Booking Form </Modal.Title>
         </Modal.Header>
         <Modal.Body>
 
@@ -229,7 +229,7 @@ const Booking = () => {
                   <Link to={`/bookings/${id}`}>
 
 
-                    <Card.Body className='text-center mb-0 text-black mt-5'>{name} - {Date} - {location.name}</Card.Body>
+                    <Card.Body className='text-center mb-0 text-secondary mt-5 text'>{name} - {Date} - {location.name}</Card.Body>
 
 
                   </Link>

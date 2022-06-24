@@ -1,0 +1,16 @@
+[
+  {
+    "model": "bookings.booking",
+    "pk": 8,
+    "fields": {
+      "name": "Thibault",
+      "email": "liuyuanmeng66@gmail.com",
+      "phone": 447474936803,
+      "number_of_guests": 6,
+      "Date": "2022-06-26",
+      "time": "12:30:00",
+      "owner": 2,
+      "location": 2
+    }
+  }
+]

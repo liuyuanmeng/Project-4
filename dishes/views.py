@@ -18,7 +18,7 @@ class DishListView(APIView):
     def get(self, _request):
         
         dishes = Dish.objects.all() 
-       
+
         serialized_dishes = PopulatedDishSerializer(dishes, many=True)
         print('serialized data ->', serialized_dishes.data)
         return Response(serialized_dishes.data, status=status.HTTP_200_OK) 
@@ -32,7 +32,7 @@ class DishDetailView(APIView):
     
     def get_dish(self, pk):
         try:
-           
+
             return Dish.objects.get(pk=pk)
         except Dish.DoesNotExist as e:
             print(e)
@@ -48,5 +48,5 @@ class DishDetailView(APIView):
 
     
 
-   
+
 

@@ -1,0 +1,110 @@
+[
+  {
+    "model": "jwt_auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$xLUwxdDGOEUqo0iUKH05zX$LimpwHzqEpr+Xp2u5VMM4OPj1LtoHu4gnunDPSgJQPE=",
+      "last_login": "2022-06-14T11:49:32.382Z",
+      "is_superuser": true,
+      "username": "daisy",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2022-06-11T20:29:00.479Z",
+      "first_name": "",
+      "last_name": "",
+      "email": "daisy@email.com",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "jwt_auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$9QyZeE4TxEEX2dPINEu9HG$Qf6oeSBgEMdaaFx1Q/XBPAubf+6n1aVZd8a29WEGhRk=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "thibaulthe",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-06-12T16:14:30.589Z",
+      "first_name": "Thibault",
+      "last_name": "He",
+      "email": "thibault.he@gmail.com",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "jwt_auth.user",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$c2ROA1ScdDJpEitkOr8Vbp$BERlyUjAy/JvbKSCSCfNLxCklqlZCCfa1RiylkHOWCI=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "Ada",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-06-12T17:38:40.492Z",
+      "first_name": "Ada",
+      "last_name": "He",
+      "email": "ada@mail.com",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "jwt_auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$dipIdoSWfdQQPLcfDjrM1h$KwqO1xCVHb67J/CgfEFyqfuw+qspGI7RS9QgAjDmnBI=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "thibaulthe+1",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-06-13T12:08:00.764Z",
+      "first_name": "Thibs",
+      "last_name": "He",
+      "email": "thibault.he+1@gmail.com",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "jwt_auth.user",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$320000$NCajTjKmICg4tK7CEjSJQM$e/1FkFzBWZpJ+2vbI4LDW3qKO3+y3b71qupeBH+Jsq8=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "thibaulthe+2",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-06-13T12:10:23.187Z",
+      "first_name": "Thibault",
+      "last_name": "He",
+      "email": "thibault.he+2@gmail.com",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "jwt_auth.user",
+    "pk": 6,
+    "fields": {
+      "password": "!trcThLWssJ6a68k0YVZF1zSJb8MK8HXdkn6vwMGO",
+      "last_login": "2022-06-14T11:23:13.433Z",
+      "is_superuser": false,
+      "username": "yuanmeng",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2022-06-14T10:53:45.885Z",
+      "first_name": "Yuanmeng",
+      "last_name": "Liu",
+      "email": "liuyuanmeng66@gmail.com",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]

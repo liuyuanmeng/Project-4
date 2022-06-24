@@ -6,7 +6,7 @@ from django.db import models
 class Booking(models.Model):
     name = models.CharField(max_length=50, default=None)
     email = models.EmailField(default=None)
-    phone = models.PositiveBigIntegerField(default=None)
+    phone = models.PositiveBigIntegerField(default=None) #Positive because phone number cannot be negative
     number_of_guests = models.PositiveIntegerField(default=None)
     Date = models.DateField(default=None)
     time = models.TimeField(default=None)

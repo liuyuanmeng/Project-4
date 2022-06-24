@@ -3,8 +3,8 @@ import axios from 'axios'
 import { Link } from 'react-router-dom'
 import { Container, Row, Card, Col } from 'react-bootstrap'
 import Slider from 'react-slick'
-import 'slick-carousel/slick/slick.css'
-import 'slick-carousel/slick/slick-theme.css'
+
+
 
 const Menu = () => {
   const [dishes, setDishes] = useState([])
@@ -22,8 +22,8 @@ const Menu = () => {
 
   }, [])
   return (
-    <Container fluid     className='container-lg'>
-      <Row>
+    <Container fluid >
+      <Row  className='moveup'>
         {dishes.map(dish => {
           const { _id, name, price, image, foodtype } = dish
           return (
@@ -33,8 +33,7 @@ const Menu = () => {
                 <Card.Img className = 'card-img' variant="top" src={image} />
                 <Card.Body className='bg-light'>
                   <Card.Title className='text-center mb-0 text-dark'>{name} -  £{price} - {foodtype.name}</Card.Title>
-                  {/* if(foodtype.name === 'Vegetrain') return ( v {foodtype.name})
-                  else if ( foodtype.name === 'Vegan') return ( vv{foodtype.name} ) */}
+                
                 </Card.Body>
               </Card>
 
@@ -49,5 +48,8 @@ const Menu = () => {
 
 
 }
+
+
+
 
 export default Menu

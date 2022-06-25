@@ -27,7 +27,7 @@ urlpatterns = [
     path('api/foodtypes/', include('foodtypes.urls')),
     path('api/bookings/', include('bookings.urls')),
     path('api/locations/', include('locations.urls')),
-     re_path(r'^.*$', index)
+    re_path(r'^.*$', index)
     
 
 ]

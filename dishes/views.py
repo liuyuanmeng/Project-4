@@ -3,11 +3,12 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status 
 from rest_framework.exceptions import NotFound 
+from django.shortcuts import render 
 
 # custom imports
 from .models import Dish
 from .serializers.common import DishSerializer
-from.serializers.populated import PopulatedDishSerializer
+from .serializers.populated import PopulatedDishSerializer
 
 
 
@@ -15,13 +16,14 @@ from.serializers.populated import PopulatedDishSerializer
 class DishListView(APIView):
     
 
-    def get(self, _request):
+    def get(self, request):
         
         dishes = Dish.objects.all() 
 
         serialized_dishes = PopulatedDishSerializer(dishes, many=True)
         print('serialized data ->', serialized_dishes.data)
         return Response(serialized_dishes.data, status=status.HTTP_200_OK) 
+     
 
     
 

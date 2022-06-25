@@ -1,7 +1,9 @@
 from django.contrib import admin
-from.models import Dish
+from .models import Dish
 
 
 
 # Register your models here.
-admin.site.register(Dish)
+class DishAdmin(admin.ModelAdmin):
+    readonly_fields = ('id',)
+admin.site.register(Dish, DishAdmin)

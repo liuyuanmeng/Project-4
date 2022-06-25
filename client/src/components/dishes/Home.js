@@ -40,7 +40,7 @@ const Home = () => {
       <Row className='moveup'>
         <Col className='mb-4' >
           <Card>
-            <Link as={Link} to="/login/">
+            <Link as={Link} to="/login">
 
               <img src={booktable} />
             </Link>
@@ -48,7 +48,7 @@ const Home = () => {
         </Col>
         <Col  className='mb-4' >
           <Card>
-            <Link as={Link} to="/dishes/">
+            <Link as={Link} to="/dishes">
 
               <img src={menu} />
             </Link>

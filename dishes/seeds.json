@@ -5,7 +5,7 @@
     "fields": {
       "name": "See City",
       "price": 15,
-      "image": "dishes/files/covers/your_shellfish.jpeg",
+      "image": "https://cdn.mos.cms.futurecdn.net/45hotBrPuykZXXDkAb3nPh-1280-80.jpg.webp",
       "foodtype": 2
     }
   },
@@ -15,7 +15,7 @@
     "fields": {
       "name": "Mushroom Club",
       "price": 13,
-      "image": "dishes/files/covers/party_mushroom.jpeg",
+      "image": "https://www.mattas.co.uk/wp-content/uploads/2019/03/Vegan-Mushroom-Wellington-875x1260.jpg",
       "foodtype": 3
     }
   },
@@ -25,7 +25,7 @@
     "fields": {
       "name": "Next Door Fish",
       "price": 14,
-      "image": "dishes/files/covers/seelover.jpeg",
+      "image": "https://assets.epicurious.com/photos/599b45c1ccbee25822ea597e/master/w_1280,c_limit/fried-whole-fish-with-tomatillo-sauce-recipe-BA-081717.jpg",
       "foodtype": 2
     }
   },
@@ -35,7 +35,7 @@
     "fields": {
       "name": "English Breakfast",
       "price": 13,
-      "image": "dishes/files/covers/Family_breakfast.jpeg",
+      "image": "https://images.squarespace-cdn.com/content/v1/55ce1e48e4b06614877a8bfb/1505904335104-N9Z6WQ4AUBW7MH48QUL1/21742901_282269332275146_8750012229847955004_n.jpg?format=750w",
       "foodtype": 2
     }
   },
@@ -45,7 +45,7 @@
     "fields": {
       "name": "My Burger",
       "price": 14,
-      "image": "dishes/files/covers/macroots.jpeg",
+      "image": "https://business.just-eat.co.uk/hs-fs/hubfs/bloody%20roots%20burger%20mac%20and%20wild%20vegan%20burger.jpg?width=1840&name=bloody%20roots%20burger%20mac%20and%20wild%20vegan%20burger.jpg",
       "foodtype": 2
     }
   },
@@ -55,7 +55,7 @@
     "fields": {
       "name": "Pancake  house",
       "price": 12,
-      "image": "dishes/files/covers/Pancake_Chanellge.jpeg",
+      "image": "https://offloadmedia.feverup.com/secretldn.com/wp-content/uploads/2021/02/05034111/The-Breakfast-Club-pancake-day.jpg",
       "foodtype": 3
     }
   },
@@ -65,7 +65,7 @@
     "fields": {
       "name": "Avocado Toast",
       "price": 13,
-      "image": "dishes/files/covers/images_3.jpeg",
+      "image": "https://www.californiastrawberries.com/wp-content/uploads/2016/04/Avocado-Balsamic-Strawberry-Toast-1024x1034.jpg",
       "foodtype": 3
     }
   },
@@ -75,7 +75,7 @@
     "fields": {
       "name": "Lobster Party",
       "price": 20,
-      "image": "dishes/files/covers/party_time.jpeg",
+      "image": "https://gimmedelicious.com/wp-content/uploads/2020/09/Broiled-Lobster-Tails-with-Garlic-Lemon-Butter-1-750x1050.jpg",
       "foodtype": 2
     }
   },
@@ -85,7 +85,7 @@
     "fields": {
       "name": "Farm Chicken",
       "price": 14,
-      "image": "dishes/files/covers/chicken01.jpeg",
+      "image": "https://images.squarespace-cdn.com/content/v1/5d2f2ed54c305500012fc2d7/1645721331380-YSHNJYPPOTNYKS9O5N5Y/chicken01.jpg?format=750w",
       "foodtype": 2
     }
   },
@@ -95,7 +95,7 @@
     "fields": {
       "name": "Salmon Benedict",
       "price": 15,
-      "image": "dishes/files/covers/salmon.jpeg",
+      "image": "https://thelocals.co/wp-content/uploads/IMG_8454111.jpg",
       "foodtype": 2
     }
   },
@@ -105,7 +105,7 @@
     "fields": {
       "name": "Green Garden",
       "price": 11,
-      "image": "dishes/files/covers/vegan.png",
+      "image": "https://uploads-ssl.webflow.com/5a71e37c07b6980001906796/5a7b048038a26f0001b23763_eat_vegan_food_in_london-p-800.png",
       "foodtype": 1
     }
   },
@@ -115,7 +115,7 @@
     "fields": {
       "name": "Little Tokyo",
       "price": 14,
-      "image": "dishes/files/covers/little_toyk.jpeg",
+      "image": "https://www.theolive-namibia.com/media/cache/ff/ba/ffba23433c55fd74efebf5badcd8e142.jpg",
       "foodtype": 2
     }
   }

@@ -11,7 +11,6 @@ psycopg2-binary = "==2.9.3"
 autopep8 = "==1.6.0"
 djangorestframework = "==3.13.1"
 django-on-heroku = "==1.1.2"
-django-environ = "==0.9.0"
 asgiref = "==3.5.2"
 astroid = "==2.11.6"
 certifi = "==2022.5.18.1"
@@ -49,6 +48,7 @@ virtualenv = "==20.14.1"
 virtualenv-clone = "==0.5.7"
 whitenoise = "==6.2.0"
 wrapt = "==1.14.1"
+python-decouple = "*"
 
 [dev-packages]
 

@@ -1,8 +1,10 @@
 import django_on_heroku
 from pathlib import Path
-from decouple import config
+import environ
 import os
 
+env = environ.Env()
+environ.Env.read_env()
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -13,7 +15,7 @@ MEDIA_URL = ''
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = config("SK")
+SECRET_KEY = env("SK")
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
@@ -168,8 +170,8 @@ EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = "smtp.gmail.com"
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = config("EADDRESS")
-EMAIL_HOST_PASSWORD = config("EPASSWORD")
+EMAIL_HOST_USER = env("EADDRESS")
+EMAIL_HOST_PASSWORD = env("EPASSWORD")
 DEFAULT_FROM_EMAIL = 'default from email'
 
 SOCIALACCOUNT_PROVIDERS = {

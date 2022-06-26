@@ -184,4 +184,4 @@ SOCIALACCOUNT_PROVIDERS = {
     }
 }
 
-# django_on_heroku.settings(locals()) 
+django_on_heroku.settings(locals()) 

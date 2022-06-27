@@ -38,6 +38,12 @@ I used QuickDBD to design all the relations diagram for the database architectur
 
 <img src="https://user-images.githubusercontent.com/100864042/175521468-27bcd2c6-15d2-4137-9dba-080543d28269.png" width="600">)
 
+## You will find the deployed app here: **[My kitchen]([https://jobrrr.herokuapp.com/](https://mykitchenproject4.herokuapp.com/))**
+To see the full features for MyKitchen, please feel free to login using the following credentials:
+
+email: liuyuanmeng66@gmail.com
+password: pass
+
 
 
 

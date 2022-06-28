@@ -47,10 +47,10 @@ const PageNavbar = () => {
 
 
                   <Nav.Link href="https://deliveroo.co.uk/" target="_blank" rel="noreferrer"> Order Online</Nav.Link>
-                  <Nav.Link as={Link} to="/find-us">Find Us</Nav.Link>
+                  <Nav.Link as={Link} to="/contact-us">Contact Us</Nav.Link>
                   <Nav.Link as={Link} to="/register">Register</Nav.Link>
                   <Nav.Link as={Link} to="/login">Login</Nav.Link>
-                  <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+                  <NavDropdown title="More" id="collasible-nav-dropdown">
                     <NavDropdown.Item as={Link} to="/locations">Locations</NavDropdown.Item>
                     <NavDropdown.Item as={Link} to="/story">Story</NavDropdown.Item>
 

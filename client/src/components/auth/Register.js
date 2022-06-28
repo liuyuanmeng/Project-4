@@ -75,25 +75,25 @@ const Register = () => {
 
               <Form.Group className='mb-3'>
 
-                <Form.Label>UserName</Form.Label>
-                <Form.Control type="username" name='username' placeholder="Usernamed" value={formData.username} onChange={handleChange} />
+                <Form.Label>User Name</Form.Label>
+                <Form.Control type="username" name='username' placeholder="Username" value={formData.username} onChange={handleChange} />
               </Form.Group>
 
               <Form.Group className='mb-3'>
 
-                <Form.Label>FirstName</Form.Label>
-                <Form.Control type="firstname" name='first_name' placeholder="Enter FirstName" value={formData.first_name} onChange={handleChange} />
+                <Form.Label>First Name</Form.Label>
+                <Form.Control type="firstname" name='first_name' placeholder="Enter First Name" value={formData.first_name} onChange={handleChange} />
+              </Form.Group>
+ 
+              <Form.Group className='mb-3'>
+
+                <Form.Label>Last Name</Form.Label>
+                <Form.Control type="lastname" name='last_name' placeholder="Enter Last Name" value={formData.last_name} onChange={handleChange} />
               </Form.Group>
 
               <Form.Group className='mb-3'>
 
-                <Form.Label>LastName</Form.Label>
-                <Form.Control type="lastname" name='last_name' placeholder="Enter LastName" value={formData.last_name} onChange={handleChange} />
-              </Form.Group>
-
-              <Form.Group className='mb-3'>
-
-                <Form.Label>PassWord</Form.Label>
+                <Form.Label>Password</Form.Label>
                 <Form.Control type="password" name='password' placeholder="Enter Password" value={formData.password} onChange={handleChange} />
               </Form.Group>
 

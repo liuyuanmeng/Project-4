@@ -5,7 +5,7 @@ import Slider from 'react-slick'
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
 
-const Findus = () => {
+const Contactus = () => {
 
 
   const settings = {
@@ -44,4 +44,4 @@ const Findus = () => {
   )
 }
 
-export default Findus
+export default Contactus

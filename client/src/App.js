@@ -9,7 +9,7 @@ import Dishes from './components/dishes/Menu'
 import Booking from './components/dishes/BookingAdd'
 import Home from './components/dishes/Home'
 import Location from './components/dishes/Location'
-import Findus from './components/dishes/Findus'
+import Contactus from './components/dishes/Contactus'
 import Story from './components/dishes/Story'
 import BookingEdit from './components/dishes/BookingEdit'
 import Footer from './components/dishes/Footer'
@@ -27,7 +27,7 @@ const App = () => {
         <Route path="/bookings/" element={<Booking/>} />
         <Route path="/bookings/:id/" element={<BookingEdit/>} />
         <Route path="/locations/" element={<Location/>} />
-        <Route path="/find-us/" element={<Findus/>} />
+        <Route path="/contact-us/" element={<Contactus/>} />
         <Route path="/story/" element={<Story/>} />
         
 

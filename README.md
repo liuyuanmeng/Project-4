@@ -2,9 +2,7 @@
 Project Four - My Kitchen 
 
 ## Overview
-My final project in the Software Engineering Immersive course is a solo full-stack project, The whole application was built and delivered in 7 days.
-
-You will find the deployed app here: links go here
+My final project in the Software Engineering Immersive course is a solo full-stack project, the whole application was built and delivered in 7 days.
 
 ## Technologies Used
 Backend:

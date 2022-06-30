@@ -132,8 +132,17 @@ Featured Code - Put Method - modify booking and send out email
 
 ## Reflection
 ### Challenges 
-### Key Learnings
-### Future Features
 
+
+### Key Learnings
+* Using Python and Django for the first time
+* Designing relationships on Back-End and control flow on Front-end
+* Reaching before making an APP (understanding market standard)
+* Time management
+
+
+### Future Features
+* Add a blog page to allow users to post their reviews and images about the restaurants.
+* Add bookings with availability indicator.
 
 

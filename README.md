@@ -125,11 +125,14 @@ Users can change or delete their bookings.
 
 <img src="https://user-images.githubusercontent.com/100864042/175342726-185449c5-7a75-4a84-9f75-1bf24a89bfb4.png" width="600">
 Featured Code - Post Method - post booking and send out email
- * we use this variable as we are going to reassign request.data['location']
- * we reformat the date using the datetime module
- * location name was sent but we need location id to store booking in the database
- * we do that by finding the location that has the location name we were sent and then we take its ID
- * we use the format method for templating
+
+ *  We use this variable as we are going to reassign request.data['location']
+ *  We reformat the date using the datetime module
+ *  Location name was sent but we need location id to store booking in the database
+ *  We do that by finding the location that has the location name we were sent and then we take its ID
+ *  We use the format method for templating
+ 
+ 
 ``` def post(self, request):
         request.data['owner'] = request.user.id
        
@@ -171,7 +174,7 @@ Featured Code - Post Method - post booking and send out email
 
 
 ### Future Features
-* Add a blog page to allow users to post their reviews and images about the restaurants.
-* Add bookings with availability indicator.
+*  Add a blog page to allow users to post their reviews and images about the restaurants.
+*  Add bookings with availability indicator.
 
 

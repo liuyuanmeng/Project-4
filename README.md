@@ -125,9 +125,38 @@ Users can change or delete their bookings.
 
 <img src="https://user-images.githubusercontent.com/100864042/175342726-185449c5-7a75-4a84-9f75-1bf24a89bfb4.png" width="600">
 Featured Code - Post Method - post booking and send out email
-<img src="https://user-images.githubusercontent.com/100864042/175503671-a8d08550-c240-46fc-971b-99a0ba7e4d53.png" width="600">
-Featured Code - Put Method - modify booking and send out email
-<img src="https://user-images.githubusercontent.com/100864042/175503740-b37da338-5455-4a81-95d9-c9789dc8576d.png" width="600">
+ * we use this variable as we are going to reassign request.data['location']
+ * we reformat the date using the datetime module
+ * location name was sent but we need location id to store booking in the database
+ * we do that by finding the location that has the location name we were sent and then we take its ID
+ * we use the format method for templating
+``` def post(self, request):
+        request.data['owner'] = request.user.id
+       
+        location_name = request.data['location'] 
+       
+        date_formatted = datetime.strptime(request.data['Date'], '%Y-%m-%d').strftime('%A %d. %B %Y')
+        
+        request.data['location'] = Location.objects.get(name=request.data['location']).id
+        print('request ->', request.data)
+        booking_to_add = BookingSerializer(data=request.data)
+        try:
+            booking_to_add.is_valid(True)
+            booking_to_add.save()
+            to_email = request.data['email']
+            mail_subject = 'My Kitchen - Booking Confirmation'
+          
+            mail_message = 'We will see you on {date} at {time} at our {location} restaurant! \n\nKind regards, \nDaisy'.format(date=date_formatted, time=request.data['time'], location=location_name)
+            send_mail(subject=mail_subject, message=mail_message, from_email=settings.EMAIL_HOST_USER, recipient_list=[to_email], auth_user=settings.EMAIL_HOST_USER, auth_password=settings.EMAIL_HOST_PASSWORD)
+            return Response({'message': f"Thank you for booking, {request.data['name']}"}, status.HTTP_201_CREATED)
+        except ValidationError:
+            return Response(booking_to_add.errors, status.HTTP_422_UNPROCESSABLE_ENTITY)
+        except Exception as e:
+            print(e)
+            return Response({'detail': str(e)}, status.HTTP_422_UNPROCESSABLE_ENTITY)
+```
+
+
 
 
 ## Reflection

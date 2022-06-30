@@ -4,6 +4,12 @@ Project Four - My Kitchen
 ## Overview
 My final project in the Software Engineering Immersive course is a solo full-stack project, the whole application was built and delivered in 7 days.
 
+You will find the deployed app here: **[Here](https://mykitchenproject4.herokuapp.com/)**
+To see the full features for MyKitchen, please feel free to login using the following credentials:
+
+email: liuyuanmeng66@gmail.com
+password: pass
+
 ## Technologies Used
 Backend:
 * Python
@@ -36,11 +42,7 @@ I used QuickDBD to design all the table relationships for the database architect
 
 <img src="https://user-images.githubusercontent.com/100864042/175521468-27bcd2c6-15d2-4137-9dba-080543d28269.png" width="600">)
 
-## You will find the deployed app here: **[My kitchen](https://mykitchenproject4.herokuapp.com/)**
-To see the full features for MyKitchen, please feel free to login using the following credentials:
 
-email: liuyuanmeng66@gmail.com
-password: pass
 
 
 

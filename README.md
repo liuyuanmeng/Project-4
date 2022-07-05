@@ -125,7 +125,7 @@ Users can change or delete their bookings.
 
 <img src="https://user-images.githubusercontent.com/100864042/175342726-185449c5-7a75-4a84-9f75-1bf24a89bfb4.png" width="600">
 
-##Featured Code - Post Method - post booking and send out email
+## Featured Code - Post Method - post booking and send out email
 
  *  We use this variable as we are going to reassign request.data['location']
  *  We reformat the date using the datetime module
@@ -170,7 +170,7 @@ Users can change or delete their bookings.
 ### Key Learnings
 * Using Python and Django for the first time
 * Designing relationships on Back-End and control flow on Front-end
-* Reaching before making an APP (understanding market standard)
+* Reseraching before making an APP (understanding market standard)
 * Time management
 
 

@@ -5,7 +5,7 @@ Project Four - My Kitchen
 My final project in the Software Engineering Immersive course is a solo full-stack project, the whole application was built and delivered in 7 days.
 
 You will find the deployed app here: **[MyKitchen](https://mykitchenproject4.herokuapp.com/)**
-To see the full features for MyKitchen, please feel free to login using the following credentials:
+To see the full features for MyKitchen, please feel free to log in using the following credentials:
 
 email: liuyuanmeng66@gmail.com
 password: pass
@@ -43,18 +43,14 @@ I used QuickDBD to design all the table relationships for the database architect
 <img src="https://user-images.githubusercontent.com/100864042/175521468-27bcd2c6-15d2-4137-9dba-080543d28269.png" width="600">)
 
 
-
-
-
-
 ## Demonstration of the App Flow 
 
 https://user-images.githubusercontent.com/100864042/175494749-4e7f5927-c321-4164-a7ca-8c56b4ba4ff2.mov
 
 ## Functionality 
 
-In My Kitchen restaurant application, users can:
-* Register & Login to make a booking and view their booking history
+In the MyKitchen restaurant application, users can:
+* Register & Log in to make a booking and view their booking history
 * View all of the dishes on the menu
 * Modify their booking
 * Delete their booking
@@ -62,14 +58,14 @@ In My Kitchen restaurant application, users can:
 ## Final Product - Screenshot Walkthrough
 
 ### Home Page 
-On the home page there are three links that will take users to different pages.
+On the home page, there are three links that will take users to different pages.
 <img src="https://user-images.githubusercontent.com/100864042/175341505-c2d1f7bd-e182-4df4-a10e-cc72f756af19.png" width="600">
 
 <img src="https://user-images.githubusercontent.com/100864042/175341595-0aa3e07c-6d08-4dbd-a115-559095147451.png" width="600">
 
 
 ### Menu Page 
-On the menu page I display name, price, image and types of the dishes.
+On the menu page I display name, price, image and type of the dishes.
 <img src="https://user-images.githubusercontent.com/100864042/175341959-245b9e31-1374-4f4f-bb81-d4ac216e0e1f.png" width="600">
 <img src="https://user-images.githubusercontent.com/100864042/175496753-4db1e47c-3b3a-4925-a53c-e138a00c3271.png" width="600">
  
@@ -88,7 +84,7 @@ On the menu page I display name, price, image and types of the dishes.
 
 
 ### Location Page
-This page uses React bootstrap offcanvas and embeds Google Maps to provide user imformation regarding the address of the restaurants. 
+This page uses the Offcanvas component of React Bootstrap and embeds Google Maps to provide users with information regarding the address of the restaurants. 
 
 <img src="https://user-images.githubusercontent.com/100864042/175342338-182b9fa4-164c-45ec-9b11-e71a7a28bce4.png" width="600">
 <img src="https://user-images.githubusercontent.com/100864042/175342350-ce92a051-7288-4153-a6d2-b4f9f612d9ca.png" width="600">
@@ -98,7 +94,7 @@ This page uses React bootstrap offcanvas and embeds Google Maps to provide user 
 
 
 ### Story Page
-On this page there is a video for which controls were added so that users can pause and play.
+On this page, there is a video for which controls were added so that users can pause and play.
 
 <img src="https://user-images.githubusercontent.com/100864042/175342362-090d2239-eaf0-4b77-a89d-fcd01e2a5b06.png" width="600">
 
@@ -121,15 +117,15 @@ Users can change or delete their bookings.
 
 
 
-### Email confirmation is sent to customers after booking is made or changed
+### Email confirmation is sent to customers after the booking is made or changed
 
 <img src="https://user-images.githubusercontent.com/100864042/175342726-185449c5-7a75-4a84-9f75-1bf24a89bfb4.png" width="600">
 
-## Featured Code - Post Method - post booking and send out email
+## Featured Code - Post Method - post-booking and sending out email
 
- *  We use this variable as we are going to reassign request.data['location']
+ *  We create a location_name variable as we are going to reassign requests.data['location']
  *  We reformat the date using the datetime module
- *  Location name was sent but we need location id to store booking in the database
+ *  Location name was sent but we need location id to store the booking in the database
  *  We do that by finding the location that has the location name we were sent and then we take its ID
  *  We use the format method for templating
  
@@ -170,7 +166,7 @@ Users can change or delete their bookings.
 ### Key Learnings
 * Using Python and Django for the first time
 * Designing relationships on Back-End and control flow on Front-end
-* Reseraching before making an APP (understanding market standard)
+* Researching before making an app (understanding market standards)
 * Time management
 
 

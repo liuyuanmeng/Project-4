@@ -13,8 +13,8 @@ password: pass
 ## Technologies Used
 Backend:
 * Python
-* Diango
-* Diango REST Framework
+* Django
+* Django REST Framework
 * Psycopg2
 * pyJWT
 * Django emails

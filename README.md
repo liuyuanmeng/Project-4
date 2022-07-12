@@ -31,14 +31,15 @@ Frontend:
 * QuickDBD
 
 ## Approach Taken
-Planning (day1)
+* Planning 
 I decided very quickly on the idea of building a restaurant app for my final project. It is the combination of my love for gastronomy and my love for programming. I used Excalidraw to plan my draft for the relationship between frontend and backend. 
 
  <img src="https://user-images.githubusercontent.com/100864042/175339847-aa9f8930-205c-4bc6-a116-bb367a1cd7f3.png" width="600">
 
 <img src="https://user-images.githubusercontent.com/100864042/175339868-5bbc547b-22d3-44c5-ba53-65f388534cd9.png" width="600">)
 
-I used QuickDBD to design all the table relationships for the database architecture.
+
+* I used QuickDBD to design all the table relationships for the database architecture.
 
 <img src="https://user-images.githubusercontent.com/100864042/175521468-27bcd2c6-15d2-4137-9dba-080543d28269.png" width="600">)
 

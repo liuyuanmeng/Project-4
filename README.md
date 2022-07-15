@@ -135,6 +135,37 @@ Code for Authentication
 In the auth.js file which creates a payload from the token from local storage by using the split() method to get the middle component of the JWT. The userIsAuthenticated() function uses the payload to check that the user is still logged in - i.e. that the payload hasn't expired .
 
 
+```export const getTokenFromLocalStorage = () => {
+  return window.localStorage.getItem('project-4')
+}
+
+export const getPayload = () => {
+  const token = getTokenFromLocalStorage()
+  
+  if (!token) return
+
+  const payload = token.split('.')[1]
+  
+  // console.log(JSON.parse(atob(payload)))
+  return JSON.parse(atob(payload))
+}
+
+// ? function that checks that user is authenticated
+export const userIsAuthenticated = () => {
+ 
+  const payload = getPayload()
+
+  if (!payload) return false
+ 
+  const currentTime = Math.floor(Date.now() / 1000)
+
+
+  return currentTime < payload.exp
+}
+```
+
+
+
 
 
 

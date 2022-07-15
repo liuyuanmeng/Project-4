@@ -130,7 +130,8 @@ The bookings view was the most complex. To get all the bookings and filter booki
           
 ```
 
-Front-End code example
+##  Front-End code example
+
 Code for Authentication  
 In the auth.js file which creates a payload from the token from local storage by using the split() method to get the middle component of the JWT. The userIsAuthenticated() function uses the payload to check that the user is still logged in - i.e. that the payload hasn't expired .
 

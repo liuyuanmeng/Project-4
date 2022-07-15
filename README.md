@@ -47,6 +47,8 @@ Frontend:
 
 ## Approach Taken
 * Planning 
+
+
 I decided very quickly on the idea of building a restaurant app for my final project. It is the combination of my love for gastronomy and my love for programming. I used Excalidraw to plan my draft for the relationship between frontend and backend. 
 
  <img src="https://user-images.githubusercontent.com/100864042/175339847-aa9f8930-205c-4bc6-a116-bb367a1cd7f3.png" width="600">
@@ -54,7 +56,8 @@ I decided very quickly on the idea of building a restaurant app for my final pro
 <img src="https://user-images.githubusercontent.com/100864042/175339868-5bbc547b-22d3-44c5-ba53-65f388534cd9.png" width="600">)
 
 
-* I used QuickDBD to design all the table relationships for the database architecture.
+* I used QuickDBD to design all the table relationships for the database architecture. By mapping out the different relationships, it made it relatively clear how I should build out my back-end and where I needed to establish relationships between PostgreSQL tables.
+
 
 <img src="https://user-images.githubusercontent.com/100864042/175521468-27bcd2c6-15d2-4137-9dba-080543d28269.png" width="600">)
 
@@ -74,9 +77,23 @@ In the MyKitchen restaurant application, users can:
 * Delete their booking
 
 
+##  Code
+
+Once the ERD using QuickDBD was drafted out, I worked to build out the different models, views, and serializers using Django and Python.
+Models
+* Dishes
+* Locations
+* Foodtypes
+* Bookings
+* Jwt-auth
 
 
-## Featured Code - Post Method - post-booking and sending out email
+
+
+## Back-End code example
+
+The bookings view was the most complex. To get all the bookings and filter bookings by the owner, use serializer convert QuerySet to python data type: used post method and Django.core.mail. So when users make a booking, they will receive a confirmation email.
+ - Post Method - post-booking and sending out email
 
  *  We create a location_name variable as we are going to reassign requests.data['location']
  *  We reformat the date using the datetime module
@@ -109,7 +126,14 @@ In the MyKitchen restaurant application, users can:
         except Exception as e:
             print(e)
             return Response({'detail': str(e)}, status.HTTP_422_UNPROCESSABLE_ENTITY)
+            
+          
 ```
+
+Front-End code example
+Code for Authentication  
+In the auth.js file which creates a payload from the token from local storage by using the split() method to get the middle component of the JWT. The userIsAuthenticated() function uses the payload to check that the user is still logged in - i.e. that the payload hasn't expired .
+
 
 
 

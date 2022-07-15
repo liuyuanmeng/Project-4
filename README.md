@@ -92,8 +92,7 @@ Models
 
 ## Back-End code example
 
-The bookings view was the most complex. To get all the bookings and filter bookings by the owner, use serializer convert QuerySet to python data type: used post method and Django.core.mail. So when users make a booking, they will receive a confirmation email.
- - Post Method - post-booking and sending out email
+ Post Method - making a booking and sending out a confirmation email
 
  *  We create a location_name variable as we are going to reassign requests.data['location']
  *  We reformat the date using the datetime module

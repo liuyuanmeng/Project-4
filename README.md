@@ -170,7 +170,13 @@ export const userIsAuthenticated = () => {
 
 
 ## Reflection
+
 ### Challenges 
+The greatest challenge of this project is sending and receiving the right data from the backend to the frontend and from the frontend to the backend. Understading  the relationships between different models.
+
+### Bugs 
+No obvious bugs.
+
 
 
 ### Key Learnings
